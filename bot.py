@@ -5,7 +5,7 @@ A: Go on omegule->text and fill out a capcha
 
 """
 
-Instahandle = '@Asseater69'
+Instahandle = '@xyz'
 Location = 'Los Angeles'
 Age = '18'
 Gender = 'F'
