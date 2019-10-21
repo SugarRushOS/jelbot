@@ -1,3 +1,30 @@
+"""
+
+Q: What if I get "temporarily banned" error?
+A: Go on omegule->text and fill out a capcha
+
+"""
+
+Instahandle = '@Asseater69'
+Location = 'Los Angeles'
+Age = '18'
+Gender = 'F'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 from pyomegle import OmegleClient, OmegleHandler
 import time, threading
 def counter():
@@ -10,7 +37,7 @@ counter()
 class Example(OmegleHandler):
     def connected(self):
         super(Example, self).connected()
-        self.omegle.send('19 F')
+        self.omegle.send(Age + ' ' + Gender)
 
     def message(self,message):
         print(message)
@@ -19,11 +46,11 @@ class Example(OmegleHandler):
             c.send('Where are you from?')
 
         if counter.cnt == 2:
-            time.sleep(.742)
-            c.send('I\'m from LA')
+            time.sleep(1.5)
+            c.send('I\'m from ' + Location)
             time.sleep(3)
             c.send("Add me on insta we can talk there more")
-            c.send("@Asseater69")
+            c.send(Instahandle)
             time.sleep(1)
             counter.cnt = 0
             time.sleep(2)
